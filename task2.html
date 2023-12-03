@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.A{
+    height: 500px;
+    width: 500px;
+    border: solid red 2px;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+.a{
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+   /* background-color: brown; */
+    position: absolute;
+    top: 1px;
+    left: 1px;
+   /* border-radius: 50px 50px;  */
+    animation-name: exp;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-play-state: running;
+  /*  animation-iteration-count: 2;
+    animation-direction:normal; */
+
+}
+.a:hover{
+animation-play-state: running;
+}
+@keyframes exp{
+10%{
+border-radius: 10px;
+background-color: rgb(38, 255, 0);
+position: absolute;
+top: 1px;
+left: 400px;
+}
+25%{
+border-radius: 20px;
+background-color: blue;
+top: 400px;
+bottom: 500px;
+}
+50%{
+border-radius: 20px;
+background-color: rgb(255, 0, 89);
+bottom: 500px;
+right: 1200px;
+}
+100%{
+    border-radius: 20px;
+background-color: rgb(0, 255, 166);
+right: 1200px;
+top: 100px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="A">
+<div class="a">
+
+</div>
+    </div>
+</body>
+</html>
